@@ -1,0 +1,15 @@
+# A/B Test Configuration
+experiments:
+  traffic_split:
+    control: 0.5      # 50% control group
+    treatment: 0.5    # 50% treatment group
+  
+  minimum_sample_size: 1000
+  confidence_level: 0.95
+  
+  metrics_to_track:
+    - click_through_rate
+    - conversion_rate
+    - avg_rating
+    - session_length
+    - diversity_score

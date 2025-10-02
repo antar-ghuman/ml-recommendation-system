@@ -1,0 +1,43 @@
+# Model Configuration
+algorithms:
+  collaborative_filtering:
+    name: "SVD"
+    n_factors: 100
+    n_epochs: 20
+    lr_all: 0.005
+    reg_all: 0.02
+    
+  matrix_factorization:
+    name: "ALS"
+    factors: 64
+    regularization: 0.01
+    iterations: 15
+    
+  neural_cf:
+    name: "NeuralCF"
+    embedding_dim: 32
+    hidden_layers: [64, 32, 16]
+    learning_rate: 0.001
+    batch_size: 256
+    epochs: 10
+
+  content_based:
+    name: "ContentBased"
+    n_components: 50  # PCA components
+    similarity_metric: "cosine"
+
+# Data splitting
+data_split:
+  test_size: 0.2
+  validation_size: 0.1
+  random_state: 42
+
+# Evaluation metrics
+metrics:
+  - rmse
+  - mae
+  - precision@10
+  - recall@10
+  - ndcg@10
+  - coverage
+  - diversity
