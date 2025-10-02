@@ -2,8 +2,8 @@
 algorithms:
   collaborative_filtering:
     name: "SVD"
-    n_factors: 100
-    n_epochs: 20
+    n_factors: 50      # Reduced from 100
+    n_epochs: 10       # Reduced from 20
     lr_all: 0.005
     reg_all: 0.02
     

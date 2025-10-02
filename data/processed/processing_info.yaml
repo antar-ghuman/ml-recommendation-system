@@ -1,0 +1,8 @@
+n_movies: 8617
+n_users: 44840
+processed_date: '2025-10-02T22:59:58.344383'
+sparsity: 99.09481568548448
+test_size: 699502
+total_ratings: 3497508
+train_size: 2448255
+val_size: 349751
