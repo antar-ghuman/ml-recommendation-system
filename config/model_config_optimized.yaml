@@ -1,0 +1,7 @@
+algorithms:
+  collaborative_filtering:
+    lr_all: 0.007
+    n_epochs: 15
+    n_factors: 100
+    name: SVD
+    reg_all: 0.02
